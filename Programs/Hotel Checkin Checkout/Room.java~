@@ -1,0 +1,20 @@
+public class Room
+{
+  private int numPerson;
+  private int numBath;
+
+  public void Room(numPers, numBat){
+    numPerson = numPers;
+    numBath = numBat;
+  }
+  public int getNumPerson(){
+    return numPerson;
+  }
+  public int getNumBath(){
+    return numPerson;
+  }
+
+
+
+
+}

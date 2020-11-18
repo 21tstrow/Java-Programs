@@ -1,0 +1,26 @@
+import java.lang.Math
+import java.util.ArrayList;
+public class CreateHotel
+{
+  public static ArrayList<Room> create(){
+  
+    ArrayList<Room> rooms = new ArrayList<Room>();
+    for (int i=0;i<200;i++){
+      int choice = (int) (Math.random() * 5);
+      if (choice = 1){
+        rooms.add(newRoom)
+      }
+    }
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}

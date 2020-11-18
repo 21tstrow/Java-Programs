@@ -1,0 +1,20 @@
+public Deck{
+  private ArrayList<Card> cards = new ArrayList<Card>();
+  
+  public Deck(){
+    card
+  }
+
+  
+  
+  
+  public String toString(){
+    String returnString = "";
+    for (Card c : cards){
+      returnString += c + "\n";
+    }
+    return returnString;
+  }
+  
+  
+}

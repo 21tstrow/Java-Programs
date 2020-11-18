@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+public class Hotel
+{
+  private static ArrayList<Room> rooms = new ArrayList<Room>();
+    
+  public Hotel(ArrayList<Room> rums){
+    rooms = rums;
+  }
+  
+  public static ArrayList<Room> getRooms(){
+    return rooms;
+  }
+  
+  public static ArrayList<Room> getAvailability(int numPers, int numBath){
+    ArrayList<Room> availableRooms = new ArrayList<Room>(); 
+    for (Room room: rooms){
+      if (room.getNumPerson() > numPers && room.getNumBath() > numBath){
+        availableRooms.add(room);
+      }
+    }
+    return availableRooms;
+  }
+  
+  public static ArrayList<Room> getAvailability(int numPers, int numBath, boolean hasCouchBed, boolean hasBalcony, boolean hasJacuzzi){
+    ArrayList<Room> availableRooms = new ArrayList<Room>();
+    ArrayList<Suite> suites = new ArrayList<Suite>();
+    for (Room room: rooms){
+      if (room instanceof Suite) {
+        suites.add((Suite)room);
+      }
+    }
+    for (Suite room: suites){
+      if (room.getNumPerson() > numPers && room.getNumBath() > numBath && room.hasCouchBed() == hasCouchBed && room.hasBalcony() == hasBalcony && room.hasJacuzzi() == hasJacuzzi){
+        availableRooms.add(room);
+      }
+    }
+    return availableRooms;
+  }
+ 
+  
+}

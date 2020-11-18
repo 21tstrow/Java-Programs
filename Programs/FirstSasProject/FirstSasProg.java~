@@ -1,0 +1,18 @@
+
+
+public class FirstSasProg 
+{
+
+  public static void main(String[] args){
+    System.out.println(returnFiveTimes(3));
+  }
+  
+  
+  
+  public static int returnFiveTimes(int n){
+  
+  return 5 * n;
+  }
+  
+
+}

@@ -1,0 +1,27 @@
+public class Graph 
+{
+  private int[][] cordinates;
+  private String output = "";
+  
+  public Graph(int numP){
+    cordinates = new int[numP][2];
+    for (int i = 0; i < numP; i++){
+      cordinates[i] = i;
+    }
+  }
+  /*
+  public static void graphLine(String equation){
+    test = false
+    for (int i = 0; i < equation.length(); i++){
+      if equation.charAt()
+    }
+  }
+  */
+  
+  public static void graphTest(){
+    int temp = 0;
+    for (int i = 0; i < cordinates.length; i++){
+      
+  }
+  
+}
